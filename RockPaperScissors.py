@@ -34,6 +34,9 @@ class rockpaperscissors(Fl_Window):
 		comp=random.randrange(0,3)
 		self.determinescore(wid,comp)
 		self.box.label(f'Your choice: scissors \n Computer choice: {self.names[comp]} \n Your score: {self.yourscore} \n Computer score: {self.compscore}')
+
+    def hello(self):
+        print("hello")
 		
 	def determinescore(self,wid,comp):
 		playerchoice=self.bl.index(wid)
